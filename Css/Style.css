@@ -1,0 +1,41 @@
+
+.container .form{
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.tasks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+    justify-content: center;  
+    height: 10vh;
+    align-items: center;
+}
+
+.task{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    border: solid red 1.5px;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+
+.del{
+    border: 1px solid green;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.done{
+    background-color: greenyellow;
+}
+
+/* .container .del{
+margin-left:300px;
+} */
