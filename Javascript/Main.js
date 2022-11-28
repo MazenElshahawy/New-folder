@@ -80,7 +80,7 @@ remove.addEventListener("click", (e) => {
 
 function addElementsToPageFrom(arrayOfTasks) {
     //empty the tasks Div
-    tasksdiv.innerHTML = "";
+    tasksdiv.innerHTML = ""; 
     //loobing array of tasks 
     arrayOfTasks.forEach((task) => {
         //create main Div
@@ -124,9 +124,9 @@ function deleteTaskWith(taskId) {
 
 function toggleStatusTaskWith(taskId) {
     for (let i = 0; i < arrayOfTasks.length; i++) {
-        if (arrayOfTasks[i].id == taskId) {
-            arrayOfTasks[i].id.completed == false ? (arrayOfTasks[i].completed = true) : (arrayOfTasks[i].completed = false)
-        }
+    if (arrayOfTasks[i].id == taskId) {
+        arrayOfTasks[i].completed == false ? (arrayOfTasks[i].completed = true) : (arrayOfTasks[i].completed = false)
     }
-    addDataToLocalStorageFrom(arrayOfTasks);
+    }
+addDataToLocalStorageFrom(arrayOfTasks);
 } 
