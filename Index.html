@@ -5,16 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="Css/Style.css">
     <script defer src="Javascript/Main.js"></script>
 </head>
 <body>
+    <div class="title">
+        <h1> Daily Plan </h1>
+    </div>
+    
     <div class="container">
         <div class="form">
-            <input type="text" class="input">
-            <input type="submit" class="add" value="Add Task" >
-            <input type="submit" class="remove" value="Clear All" >
+            <input type="text" class="input" placeholder="Add item here">
+            <button class="add"> Add Task</button>
         </div>
+
+        <div class="buttons">
+            <input type="button" class="remove" value="Clear All" >
+        </div>
+
         <div class="tasks">
         </div>
     </div>

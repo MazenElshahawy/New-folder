@@ -95,7 +95,7 @@ function addElementsToPageFrom(arrayOfTasks) {
         //create Delete button 
         const span = document.createElement("span")
         span.className = "del"
-        span.appendChild(document.createTextNode("Delete"))
+        span.appendChild(document.createTextNode("X"))
         div.appendChild(span)
         // add tasks div to the page 
         tasksdiv.appendChild(div)
