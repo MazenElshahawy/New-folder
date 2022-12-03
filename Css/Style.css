@@ -64,6 +64,11 @@ h1 {
     border: 2px solid #fff;
 }
 
+h5{
+    font-size: 2rem;
+    font-weight: 700;
+
+}
 
 
 .buttons {
@@ -92,6 +97,10 @@ h1 {
     line-height: 3rem;
 }
 
+div.task{
+    cursor: pointer;
+}
+
 .task {
     width: 100%;
     display: flex;
@@ -115,17 +124,31 @@ h1 {
     line-height: 1;
     color: rgb(214, 30, 73);
     opacity: 0.8;
+    text-decoration: none;
+    border: none;
+    background-color: #fff;
 }
+
 
 .done {
     background-color: rgb(116, 122, 116);
     opacity: 0.5;
     color: #fff;
     font-size: 17px;
-    text-decoration: line-through #000;
 }
 
+.done h5{
+
+text-decoration: line-through #000;
+
+}
+
+
+
 .done .del {
-    color: rgb(0, 0, 0);
+    color: rgb(255 255 255);
     font-size: 17px;
+    opacity: 1;
+    color: yellow;
+    background-color: gray;
 }

@@ -9,6 +9,8 @@ const remove = document.querySelector(".remove")
 let arrayOfTasks = [];
 
 
+
+
 //check if there is tasks in local storage
 
 if (localStorage.getItem("tasks")) {
@@ -24,6 +26,8 @@ submit.addEventListener("click", (eo) => {
     if (input.value !== "") {
         addTaskToArray(input.value);
         input.value = "";
+    }else{
+        alert("Please add your task")
     }
 })
 
@@ -91,11 +95,16 @@ function addElementsToPageFrom(arrayOfTasks) {
             div.className = "task done"
         }
         div.setAttribute("data-id", task.id);
-        div.appendChild(document.createTextNode(task.title));
+
+        const h5 = document.createElement("h5");
+        const textnode = document.createTextNode(task.title);
+        h5.appendChild(textnode)
+        div.appendChild(h5);
+        
         //create Delete button 
-        const span = document.createElement("span")
+        const span = document.createElement("button")
         span.className = "del"
-        span.appendChild(document.createTextNode("X"))
+        span.appendChild(document.createTextNode("Delete"))
         div.appendChild(span)
         // add tasks div to the page 
         tasksdiv.appendChild(div)
@@ -130,3 +139,4 @@ function toggleStatusTaskWith(taskId) {
     }
 addDataToLocalStorageFrom(arrayOfTasks);
 } 
+
